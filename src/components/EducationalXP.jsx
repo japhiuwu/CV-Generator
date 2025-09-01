@@ -3,7 +3,7 @@ function EducationalXP({handleSubmitEXP, editingEducationalIndex, formData, hand
     return(
         <form onSubmit={handleSubmitEXP}>
             <section>
-            <h2 className='text-3xl my-3'>Educational Experience</h2>
+            <h2 className='text-3xl mb-2 mt-6'>Educational Experience</h2>
             <div>
                 <label htmlFor="school">School Name: </label>
                 <input 
@@ -34,10 +34,10 @@ function EducationalXP({handleSubmitEXP, editingEducationalIndex, formData, hand
                 defaultValue={editingEducationalIndex > -1 ? formData.education[editingEducationalIndex]?.toEXP || "" : ""}
                 />
             </div>
-            <div className='mt-4'>
+            <section className='mt-4 flex justify-end gap-5'>
                 <button type="button" onClick={handleEducationEdit}>Edit</button>
                 <button type="submit">Submit</button>
-            </div>
+            </section>
             </section>
         </form>
     )

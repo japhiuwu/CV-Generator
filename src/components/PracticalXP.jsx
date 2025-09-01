@@ -3,7 +3,7 @@ function PracticalXP({handleSubmitPXP, editingPracticalIndex, formData, handlePr
     return(
         <form onSubmit={handleSubmitPXP}>
           <section>
-            <h2 className='text-3xl my-2'>Practical Experience</h2>
+            <h2 className='text-3xl mb-2 mt-6'>Practical Experience</h2>
             <div>
               <label htmlFor="company">Company Name: </label>
               <input 
@@ -41,10 +41,10 @@ function PracticalXP({handleSubmitPXP, editingPracticalIndex, formData, handlePr
                 defaultValue={editingPracticalIndex > -1 ? formData.experience[editingPracticalIndex]?.activities || "" : ""}
               />
             </div>
-          <div className='mt-4'>
+          <section className='mt-4 flex justify-end gap-5'>
             <button type="button" onClick={handlePracticalEdit}>Edit</button>
             <button type="submit">Submit</button>
-          </div>
+          </section>
           </section>
       </form>
     )

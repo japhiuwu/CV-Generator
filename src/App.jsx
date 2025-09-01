@@ -25,12 +25,12 @@ function App() {
   };
 
   return (
-    <div className='flex flex-row w-screen'>
-      <div className='w-1/2 px-12 text-ce'>
-        <Form handleChange={handleChange} setFormData={setFormData} formData={formData}/>
+    <div className="flex flex-col md:flex-row w-screen">
+      <div className="w-full md:w-1/2 px-12">
+        <Form handleChange={handleChange} setFormData={setFormData} formData={formData} />
       </div>
-      <div className='w-1/2 px-12'>
-        <Cv formData={formData}/>
+      <div className="w-full md:w-1/2 px-12">
+        <Cv formData={formData} />
       </div>
     </div>
   )

@@ -12,7 +12,7 @@ export default function Form({ handleChange, setFormData, formData }) {
       <form>
         {/* GENERAL INFO */}
         <section className='general-information'>
-          <h2 className='text-3xl my-2'>General Information</h2>
+          <h2 className='text-3xl mb-2 mt-6'>General Information</h2>
           <div>
             <label htmlFor="name">Name: </label>
             <input 
