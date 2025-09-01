@@ -3,7 +3,7 @@ import EducationalXP from "./components/EducationalXP"
 function Cv({formData}){
     return(
     <>
-        <h1 className="text-4xl text-center font-bold">CV</h1>
+        <h1 className="text-4xl text-center font-bold mt-6">CV</h1>
         <p id="name-txt" className="text-2xl my-1 text-center">{formData.general?.name || "Juanito Alcachofa"}</p>
         <span className="flex align-middle justify-center">
             <p id="phone-txt" className="mr-6">{formData.general?.email || "juanito.alcachofa@email.com"}</p>
